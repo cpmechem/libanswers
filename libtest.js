@@ -1,6 +1,7 @@
 // ==UserScript==
 //@include http://libanswers.utsa.edu/record.php*
 //@author Marcus Jackson
+//@editor Esteban Cantu
 //@editor Caleb Mechem
 
 
