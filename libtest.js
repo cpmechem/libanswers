@@ -1,15 +1,14 @@
 // ==UserScript==
 //@include http://libanswers.utsa.edu/record.php*
 //@author Marcus Jackson
+//@editor Caleb Mechem
 
-//TODO: Refactor for cleanliness
 
 var qbox = document.getElementById('qpreselect');
 var qboxValue, text, client, qcombo, option, textByLine;
 
 
 client = new XMLHttpRequest();
-client.open('GET', 'https://cpmechem.github.io/libanswers/options.txt');
 client.onreadystatechange = function() {
     if (client.readyState == 4 && client.status == 200){
         text = client.responseText.split('\n');
