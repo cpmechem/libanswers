@@ -24,7 +24,7 @@ qbox.addEventListener('click', choiceListener);
 function choiceListener() {
     qboxValue = qbox.value;
     //DIRECTIONAL
-    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250 ||)
+    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250)
     {
     	setFields(2, 1, 1, 1);
     }
