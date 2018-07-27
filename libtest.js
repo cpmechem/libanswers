@@ -24,7 +24,7 @@ qbox.addEventListener('click', choiceListener);
 function choiceListener() {
     qboxValue = qbox.value;
     //laptop/GIFM/Dibs/other tech
-    if(qboxValue == 27251 || qboxValue == 27252 || qboxValue == 27249 || qboxValue == 27250 || 
+    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250 || 
       qboxValue == 27253)
     {
     	setFields(2, 1, 1, 1);
@@ -33,6 +33,11 @@ function choiceListener() {
     else if(qboxValue == 27248)
     {
     	setFields(1, 1, 1, 1);
+    }
+    //technical
+    else if(qboxValue == 27252)
+    {
+        setFields(3,1,1,1)
     }
 
 }
