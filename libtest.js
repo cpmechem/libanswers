@@ -17,7 +17,7 @@ client.onreadystatechange = function() {
         createOptions(text);
     }
 }
-+client.send();
+client.send();
 
 qbox.addEventListener('click', choiceListener);
 
