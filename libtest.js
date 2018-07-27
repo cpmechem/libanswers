@@ -23,23 +23,26 @@ qbox.addEventListener('click', choiceListener);
 
 function choiceListener() {
     qboxValue = qbox.value;
-    //laptop/GIFM/Dibs/other tech
-    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250 || 
-      qboxValue == 27253)
+    //DIRECTIONAL/techgear/tools/supply/stacks/directions/GIFM/studyroom/users/hours/lostandfound/locker/random/other
+    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250 ||)
     {
     	setFields(2, 1, 1, 1);
     }
-    //course reserve
+    //REFERENCE/reserves/reference
     else if(qboxValue == 27248)
     {
     	setFields(1, 1, 1, 1);
     }
-    //technical
-    else if(qboxValue == 27252)
+    //TECHNICAL/tech support/FORTESTOTHERTECH
+    else if(qboxValue == 27250)
     {
         setFields(3,1,1,1)
     }
-
+    //FEEDBACK/feedback/FORTESTSUPPLY
+    else if(qboxValue == 27253)
+    {
+        setFields(4,1,1,1)
+    }
 }
 
 function setFields(f1, f2, f3, f4) {
