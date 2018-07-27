@@ -24,7 +24,7 @@ qbox.addEventListener('click', choiceListener);
 function choiceListener() {
     qboxValue = qbox.value;
     //DIRECTIONAL
-    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27252 || qboxValue == 00001 || qboxValue == 00001 || qboxValue == 00003 || qboxValue == 00004 || qboxValue == 00005 || qboxValue == 00006 || qboxValue == 00007 || qboxValue == 00008 || qboxValue == 00009 || qboxValue == 00010)
+    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27252 || qboxValue == 27253 || qboxValue == 00001 || qboxValue == 00003 || qboxValue == 00004 || qboxValue == 00005 || qboxValue == 00006 || qboxValue == 00007 || qboxValue == 00008 || qboxValue == 00009 || qboxValue == 00010)
     {
     	setFields(2, 1, 1, 1);
     }
@@ -37,11 +37,6 @@ function choiceListener() {
     else if(qboxValue == 27250)
     {
         setFields(3, 1, 1, 1)
-    }
-    //FEEDBACK/feedback/FORTESTSUPPLY
-    else if(qboxValue == 27253)
-    {
-        setFields(4, 1, 1, 1)
     }
 }
 
