@@ -23,7 +23,7 @@ qbox.addEventListener('click', choiceListener);
 
 function choiceListener() {
     qboxValue = qbox.value;
-    //DIRECTIONAL/techgear/tools/supply/stacks/directions/GIFM/studyroom/users/hours/lostandfound/locker/random/other
+    //DIRECTIONAL
     if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27250 ||)
     {
     	setFields(2, 1, 1, 1);
