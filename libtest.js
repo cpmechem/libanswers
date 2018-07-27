@@ -36,12 +36,12 @@ function choiceListener() {
     //TECHNICAL/tech support/FORTESTOTHERTECH
     else if(qboxValue == 27250)
     {
-        setFields(3,1,1,1)
+        setFields(3, 1, 1, 1)
     }
     //FEEDBACK/feedback/FORTESTSUPPLY
     else if(qboxValue == 27253)
     {
-        setFields(4,1,1,1)
+        setFields(4, 1, 1, 1)
     }
 }
 
