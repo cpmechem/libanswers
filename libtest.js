@@ -27,7 +27,7 @@ function choiceListener() {
     if(qboxValue == 27251 || qboxValue == 27252 || qboxValue == 27249 || qboxValue == 27250 || 
       qboxValue == 27253)
     {
-    	setFields(2, 1, 3, 1);
+    	setFields(2, 1, 1, 1);
     }
     //course reserve
     else if(qboxValue == 27248)
