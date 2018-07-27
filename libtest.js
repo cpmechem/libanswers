@@ -24,12 +24,12 @@ qbox.addEventListener('click', choiceListener);
 function choiceListener() {
     qboxValue = qbox.value;
     //DIRECTIONAL
-    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27252)
+    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27252 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000 || qboxValue == 00000)
     {
     	setFields(2, 1, 1, 1);
     }
     //REFERENCE/reserves/reference
-    else if(qboxValue == 27248)
+    else if(qboxValue == 27248 || qboxValue == 00000)
     {
     	setFields(1, 1, 1, 1);
     }
