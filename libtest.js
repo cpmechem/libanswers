@@ -34,64 +34,7 @@ function choiceListener() {
     {
     	setFields(1, 1, 1, 1);
     }
-    //Second Floor
-    //Reference
-    else if(qboxValue == 2)
-    {
-        document.getElementById('q').value = "Reference";
-        setFields(1, 1, 1, 1);
-        swapFields();
-    }
-    //Directional
-    else if(qboxValue == 3)
-    {
-        document.getElementById('q').value = "Directional";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Stacks Transaction
-    else if(qboxValue == 4)
-    {
-        document.getElementById('q').value = "Stacks Transaction";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Multimedia
-    else if(qboxValue == 5)
-    {
-        document.getElementById('q').value = "Multimedia (CD/DVD/etc.)";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Difficult Reserve
-    if(qboxValue == 6)
-    {
-        document.getElementById('q').value = "Difficult Reserve";
-    	setFields(1, 1, 1, 2);
-        swapFields();
-    }
-    //Phone Directional
-    if(qboxValue == 7)
-    {
-        document.getElementById('q').value = "Phone Directional";
-    	setFields(2, 2, 1, 1);
-        swapFields();
-    }
-    //Phone Reserve
-    if(qboxValue == 8)
-    {
-        document.getElementById('q').value = "Phone Reserve";
-    	setFields(1, 2, 1, 1);
-        swapFields();
-    }
-    //First Floor
-    //Directional
-    else if(qboxValue == 10)
-    {
-        document.getElementById('q').value = "Directional";
-    	setFields(2, 1, 2, 1);
-        swapFields();
-    }
+
 }
 
 function setFields(f1, f2, f3, f4) {
