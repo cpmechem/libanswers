@@ -50,17 +50,7 @@ function setFields(f1, f2, f3, f4) {
     document.getElementById('f2').value = f2;
     document.getElementById('f3').value = f3;
     document.getElementById('f4').value = f4;
-}
 
-//generate new options
-function createOptions(textByLine){  
-    qcombo = document.getElementById('qpreselect');
-    for(i=0; i < textByLine.length-1; i++){
-        option = document.createElement('option');
-        option.text = textByLine[i];
-        option.value = i+1;
-        qcombo.appendChild(option);
-    }
 }
 
 function swapFields(){
