@@ -26,14 +26,14 @@ function choiceListener() {
     //DIRECTIONAL
     if(qboxValue == 36023 || qboxValue == 36024 || qboxValue == 36025 || qboxValue == 36026 || qboxValue == 36027 || qboxValue == 36028 || qboxValue == 36029 || qboxValue == 36030 || qboxValue == 36031 || qboxValue == 36034 || qboxValue == 36035 || qboxValue == 36036)
     {
-    	setFields(2, 1, 1, 1);
+    	setFields(0, 1, 1, 1);
     }
     //REFERENCE/reserves/reference
     else if(qboxValue == 36022 || qboxValue == 36032)
     {
     	setFields(1, 1, 1, 1);
     }
-    //TECHNICAL/tech support/FORTESTOTHERTECH
+    //TECHNICAL/tech support
     else if(qboxValue == 36033)
     {
         setFields(3, 1, 1, 1)
