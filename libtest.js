@@ -24,17 +24,17 @@ qbox.addEventListener('click', choiceListener);
 function choiceListener() {
     qboxValue = qbox.value;
     //DIRECTIONAL
-    if(qboxValue == 27251 || qboxValue == 27249 || qboxValue == 27252 || qboxValue == 27253 || qboxValue == 00001 || qboxValue == 00003 || qboxValue == 00004 || qboxValue == 00005 || qboxValue == 00006 || qboxValue == 00007 || qboxValue == 00008 || qboxValue == 00009 || qboxValue == 00010)
+    if(qboxValue == 36023 || qboxValue == 36024 || qboxValue == 36025 || qboxValue == 36026 || qboxValue == 36027 || qboxValue == 36028 || qboxValue == 36029 || qboxValue == 36030 || qboxValue == 36031 || qboxValue == 36034 || qboxValue == 36035 || qboxValue == 36036)
     {
     	setFields(2, 1, 1, 1);
     }
     //REFERENCE/reserves/reference
-    else if(qboxValue == 27248 || qboxValue == 00011)
+    else if(qboxValue == 36022 || qboxValue == 36032)
     {
     	setFields(1, 1, 1, 1);
     }
     //TECHNICAL/tech support/FORTESTOTHERTECH
-    else if(qboxValue == 27250)
+    else if(qboxValue == 36033)
     {
         setFields(3, 1, 1, 1)
     }
