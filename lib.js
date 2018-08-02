@@ -1,8 +1,9 @@
 // ==UserScript==
 //@include http://libanswers.utsa.edu/record.php*
 //@author Marcus Jackson
+//@editor Esteban Cantu
+//@editor Caleb Mechem
 
-//TODO: Refactor for cleanliness
 
 var qbox = document.getElementById('qpreselect');
 var qboxValue, text, client, qcombo, option, textByLine;
@@ -22,74 +23,25 @@ qbox.addEventListener('click', choiceListener);
 
 function choiceListener() {
     qboxValue = qbox.value;
-    //laptop/GIFM/Dibs/other tech
-    if(qboxValue == 27251 || qboxValue == 27252 || qboxValue == 27249 || qboxValue == 27250 || 
-      qboxValue == 27253)
+    //DIRECTIONAL
+    if(qboxValue == 36023 || qboxValue == 36024 || qboxValue == 36025 || qboxValue == 36026 || qboxValue == 36027 || qboxValue == 36028 || qboxValue == 36029 || qboxValue == 36030 || qboxValue == 36031 || qboxValue == 36034 || qboxValue == 36035 || qboxValue == 36036)
     {
     	setFields(2, 1, 1, 1);
     }
-    //course reserve
-    else if(qboxValue == 27248)
+    //REFERENCE/reserves/reference
+    else if(qboxValue == 36022 || qboxValue == 36032)
     {
     	setFields(1, 1, 1, 1);
     }
-    //Second Floor
-    //Reference
-    else if(qboxValue == 2)
+    //TECHNICAL/tech support
+    else if(qboxValue == 36033)
     {
-        document.getElementById('q').value = "Reference";
-        setFields(1, 1, 1, 1);
-        swapFields();
+        setFields(3, 1, 1, 1)
     }
-    //Directional
-    else if(qboxValue == 3)
+    //FEEDBACK/feedback
+    else if(qboxValue == 36037)
     {
-        document.getElementById('q').value = "Directional";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Stacks Transaction
-    else if(qboxValue == 4)
-    {
-        document.getElementById('q').value = "Stacks Transaction";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Multimedia
-    else if(qboxValue == 5)
-    {
-        document.getElementById('q').value = "Multimedia (CD/DVD/etc.)";
-    	setFields(2, 1, 1, 1);
-        swapFields();
-    }
-    //Difficult Reserve
-    if(qboxValue == 6)
-    {
-        document.getElementById('q').value = "Difficult Reserve";
-    	setFields(1, 1, 1, 2);
-        swapFields();
-    }
-    //Phone Directional
-    if(qboxValue == 7)
-    {
-        document.getElementById('q').value = "Phone Directional";
-    	setFields(2, 2, 1, 1);
-        swapFields();
-    }
-    //Phone Reserve
-    if(qboxValue == 8)
-    {
-        document.getElementById('q').value = "Phone Reserve";
-    	setFields(1, 2, 1, 1);
-        swapFields();
-    }
-    //First Floor
-    //Directional
-    else if(qboxValue == 10)
-    {
-        document.getElementById('q').value = "Directional";
-    	setFields(2, 1, 2, 1);
-        swapFields();
+        setFields(0, 0, 0, 0)
     }
 }
 
@@ -98,17 +50,7 @@ function setFields(f1, f2, f3, f4) {
     document.getElementById('f2').value = f2;
     document.getElementById('f3').value = f3;
     document.getElementById('f4').value = f4;
-}
 
-//generate new options
-function createOptions(textByLine){  
-    qcombo = document.getElementById('qpreselect');
-    for(i=0; i < textByLine.length-1; i++){
-        option = document.createElement('option');
-        option.text = textByLine[i];
-        option.value = i+1;
-        qcombo.appendChild(option);
-    }
 }
 
 function swapFields(){
