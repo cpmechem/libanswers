@@ -50,7 +50,7 @@ function setFields(f1, f2, f3, f4, f5) {
     document.getElementById('f2').value = f2;
     document.getElementById('f3').value = f3;
     document.getElementById('f4').value = f4;
-    document.getElementByID('f5').value = f5;
+    document.getElementById('f5').value = f5;
 
 }
 
